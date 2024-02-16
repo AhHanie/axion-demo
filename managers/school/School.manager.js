@@ -25,7 +25,7 @@ module.exports = class SchoolManager {
    * @apiGroup School
    *
    * @apiBody {String} name School name. Can only contain letters and whitespaces. Length between 1 and 20 characters.
-   * @apiBody {String[]} classrooms Array of string classroom ids. Can be an empty array.
+   * @apiBody {String[]} classrooms Array of string classroom ids. Length between 0 and 1000 items.
    *
    * @apiDescription
    * Create a new school document in the database.
@@ -204,7 +204,7 @@ module.exports = class SchoolManager {
    * @apiParam {String} id School Id
    *
    * @apiBody {String} name School name. Can only contain letters and whitespaces. Length between 1 and 20 characters.
-   * @apiBody {String[]} classrooms Array of string classroom ids. Can be an empty array.
+   * @apiBody {String[]} classrooms Array of string classroom ids. Length between 0 and 1000 items.
    *
    * @apiDescription
    * Updates an existing school document in the database.

@@ -15,6 +15,7 @@ module.exports = {
         length: 24,
         custom: "_id",
       },
+      length: { min: 0, max: 100 },
     },
   ],
   updateClassroom: [
@@ -33,6 +34,7 @@ module.exports = {
         length: 24,
         custom: "_id",
       },
+      length: { min: 0, max: 100 },
     },
   ],
   classroomIdParams: [

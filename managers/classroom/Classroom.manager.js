@@ -33,7 +33,7 @@ module.exports = class ClassroomManager {
    * @apiGroup Classroom
    *
    * @apiBody {String} name Classroom name. Can only contain letters and whitespaces. Length between 1 and 20 characters.
-   * @apiBody {String[]} students Array of string student ids. Can be an empty array.
+   * @apiBody {String[]} students Array of string student ids. Length between 0 and 100 items.
    *
    * @apiDescription
    * Create a new classroom document in the database.
@@ -264,7 +264,7 @@ module.exports = class ClassroomManager {
    * @apiParam {String} id Classroom Id
    *
    * @apiBody {String} name Classroom name. Can only contain letters and whitespaces. Length between 1 and 20 characters.
-   * @apiBody {String[]} students Array of string students ids. Can be an empty array.
+   * @apiBody {String[]} students Array of string students ids. Length between 0 and 100 items.
    *
    * @apiDescription
    * Updates an existing classroom document in the database.
