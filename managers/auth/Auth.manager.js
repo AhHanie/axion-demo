@@ -64,6 +64,11 @@ module.exports = class AuthManager {
       return result;
     }
 
+    const sameUsernameCount = await this.User.countDocuments({ username });
+    if (sameUsernameCount > 0) {
+      return { error: "Username already exists" };
+    }
+
     const createdUser = new this.User(user);
     await createdUser.save();
 
